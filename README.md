@@ -17,6 +17,7 @@
 </br>
 </br>
 ## Table of autofishers for Minecraft 1.16+
+
 [Fishing bobber color detectors](#fishing-bobber-color-detectors)\
 [Autofishers that are Minecraft clients](#autofishers-that-are-minecraft-clients---takes-action-when-the-server-tells-the-client-that-the-fishing-bobber-has-splashed)\
 [Caption Template Image Matching](#matches-a-template-image-of-the-"fishing-bobber-splashes"-caption-to-a-screenshot-of-minecraft)\
@@ -24,37 +25,37 @@
 [Future Testing](#using-optical-character-recognition-ocr-to-detect-if-the-"fishing-bobber-splases"-caption-appears-on-screen)
 
 ### Fishing bobber color detectors
-| Link  | How it works  | Is it an executable or a script? (See above for explanation)  | Win  | Mac  | Linux  | Reliability  | Notes  |
+| Link  | How it works  | Executable or Script?  | Win  | Mac  | Linux  | Reliability  | Notes  |
 |---|---|---|---|---|---|---|---|
-|https://github.com/kirb3/minecraft-fisher   | Detects changes in red intensity around the bobber. User indicates a window around the bobber  | Python script  | :white_check_mark  | :white_large_square  | :white_large_square  | Did not work for me  | Uses windows specific libraries to capture the screen, so does not work on mac/linux  |
-|https://github.com/prerikoth/Minecraft-Auto-Fisher   | Variation on kirb3's autofisher. Detects changes in red intensity around the bobber. User indicates a window around the bobber  | Python script  | :white_check_mark  | :white_large_square  | :white_large_square  | Did not work for me  | Uses windows specific libraries to capture the screen, so does not work on mac/linux  |
-|https://github.com/bionoren/autofishing   | Assumes the fishing bobber is in the middle of the screen, takes a screenshot around that area, and detects if the change in red in the screenshot exceeds a threshold | Go script  | :white_large_square  | :white_large_square  | :white_large_square  | I have not tested this  |   |
-|https://github.com/JohnAJimenez/random-stuff/blob/master/game-related/minecraft/minecraft-autofishing.ahk  |  | AutoHotKey script  | :white_large_square  | :white_large_square  | :white_large_square  | I have not tested this  |   |
+|[kirb3](https://github.com/kirb3/minecraft-fisher)   | Detects changes in red intensity around the bobber. User indicates a window around the bobber  | Python script  | :white_check_mark::  | :white_large_square:  | :white_large_square:  | Did not work for me  | Uses windows specific libraries to capture the screen, so does not work on mac/linux  |
+|[prerikoth](https://github.com/prerikoth/Minecraft-Auto-Fisher)   | Variation on kirb3's autofisher. Detects changes in red intensity around the bobber. User indicates a window around the bobber  | Python script  | :white_check_mark::  | :white_large_square:  | :white_large_square:  | Did not work for me  | Uses windows specific libraries to capture the screen, so does not work on mac/linux  |
+|[bionoren](https://github.com/bionoren/autofishing)   | Assumes the fishing bobber is in the middle of the screen, takes a screenshot around that area, and detects if the change in red in the screenshot exceeds a threshold | Go script  | :white_large_square:  | :white_large_square:  | :white_large_square:  | I have not tested this  |   |
+|[JohnAJimenez](https://github.com/JohnAJimenez/random-stuff/blob/master/game-related/minecraft/minecraft-autofishing.ahk)  |  | AutoHotKey script  | :white_large_square:  | :white_large_square:  | :white_large_square:  | I have not tested this  |   |
 
 ### Autofishers that are Minecraft clients - Takes action when the server tells the client that the fishing bobber has splashed
-| Link  | How it works  | Is it an executable or a script? (See above for explanation)  | Win  | Mac  | Linux  | Reliability  | Notes  | 
+| Link  | How it works  | Executable or Script?  | Win  | Mac  | Linux  | Reliability  | Notes  | 
 |---|---|---|---|---|---|---|---|
-| https://github.com/MrKinau/FishingBot   | Background autofisher. The user has to position the minecraft player over water with fishing rod in hand, then log out and start the script. The program is a minecraft client.  | Jar executable  | :white_check_mark  | :white_check_mark  | :white_check_mark  | Very reliable  |  Has a nice GUI, and shows a tally of loot collected.  |
-| https://github.com/Amund211/autofish  | Backgrond autofisher. The user has to position the minecraft player over water with fishing rod in hand, then log out and start the script. The program is a minecraft client. When the server instructs the client/script to play the "fishing bobber splashes" sound, the client detects the instruction and sends 2 right click commands | Python script  | :white_check_mark  | :white_check_mark  | :white_check_mark  | Does not support Microsoft authentication, untested  |   | 
-| https://github.com/Nitro1231/MineFish, https://github.com/Nitro1231/MineFish-Beta3  |   |   |   |   |   | I have not tested this  |   |
+| [MrKinau's FishingBot](https://github.com/MrKinau/FishingBot)   | Background autofisher. The user has to position the minecraft player over water with fishing rod in hand, then log out and start the script. The program is a minecraft client.  | Jar executable  | :white_check_mark:  | :white_check_mark:  | :white_check_mark:  | Very reliable  |  Has a nice GUI, and shows a tally of loot collected.  |
+| [Amund211](https://github.com/Amund211/autofish)  | Backgrond autofisher. The user has to position the minecraft player over water with fishing rod in hand, then log out and start the script. The program is a minecraft client. When the server instructs the client/script to play the "fishing bobber splashes" sound, the client detects the instruction and sends 2 right click commands | Python script  | :white_check_mark:  | :white_check_mark:  | :white_check_mark:  | Does not support Microsoft authentication, untested  |   | 
+| [Nitro1231](https://github.com/Nitro1231/MineFish), [Nitro1231-Beta3](https://github.com/Nitro1231/MineFish-Beta3)  |   |   |   |   |   | I have not tested this  |   |
 
 ### Matches a template image of the "Fishing Bobber Splashes" caption to a screenshot of Minecraft
-| Link  | How it works  | Is it an executable or a script? (See above for explanation)  | Win  | Mac  | Linux  | Reliability  | Notes  |
+| Link  | How it works  | Executable or Script?  | Win  | Mac  | Linux  | Reliability  | Notes  |
 |---|---|---|---|---|---|---|---|
-| https://github.com/elias123tre/minecraft-auto-fisher  | Template matching: Checks if any part of **the whole screen** matches a template image of the "Fishing Bobber Splashes" caption (pyautogui.locateOnScreen)| Python script. The provided windows executable does not work, you have to compile it yourself using pyinstaller  | :white_check_mark  | :white_check_mark  | :white_check_mark  | Extremely reliable. If the Minecraft window is so small such that chat overlaps captions, less reliable. If fishing bobber splashes within 5 seconds of each other, less reliable. | Very easy to use because the program uses a screenshot of the entire screen and no selection is required. The template is a image of the caption in English only. You could edit the python file to use your own image of a caption in a different language. Additionally, the script requires an internet connection as the reference screenshot is downloaded from imgur.  |
-|https://github.com/xxu-mzwyt/Minecraft-Auto-Fishing   | Template matching: Checks if any part of a **selected part of the screen** matches a screenshot of the "FIshing Bobber Splashes" caption (cv2.BGR2GRAY on template and screenshot. cv2.matchTemplate). | Python Script | :white_check_mark  | :white_check_mark  | :white_check_mark  | Very reliable  | Program UI text is in Chinese. English and Chinese (Simplified) template caption images are provided. Capturing and matching a smaller part of the screen might reduce processor workload, untested. However, this means that the selection needs to be repositioned if the Minecraft window is moved. |
+| [elias123tre](https://github.com/elias123tre/minecraft-auto-fisher)  | Template matching: Checks if any part of **the whole screen** matches a template image of the "Fishing Bobber Splashes" caption (pyautogui.locateOnScreen)| Python script. The provided windows executable does not work, you have to compile it yourself using pyinstaller  | :white_check_mark:  | :white_check_mark:  | :white_check_mark:  | Extremely reliable. If the Minecraft window is so small such that chat overlaps captions, less reliable. If fishing bobber splashes within 5 seconds of each other, less reliable. | Very easy to use because the program uses a screenshot of the entire screen and no selection is required. The template is a image of the caption in English only. You could edit the python file to use your own image of a caption in a different language. Additionally, the script requires an internet connection as the reference screenshot is downloaded from imgur.  |
+|[xxu-mzwyt](https://github.com/xxu-mzwyt/Minecraft-Auto-Fishing)   | Template matching: Checks if any part of a **selected part of the screen** matches a screenshot of the "FIshing Bobber Splashes" caption (cv2.BGR2GRAY on template and screenshot. cv2.matchTemplate). | Python Script | :white_check_mark:  | :white_check_mark:  | :white_check_mark:  | Very reliable  | Program UI text is in Chinese. English and Chinese (Simplified) template caption images are provided. Capturing and matching a smaller part of the screen might reduce processor workload, untested. However, this means that the selection needs to be repositioned if the Minecraft window is moved. |
 
 ### Using Optical Character Recognition (OCR) to detect if the "Fishing Bobber Splases" Caption appears on screen
-Link  | How it works  | Is it an executable or a script? (See above for explanation)  | Win  | Mac  | Linux  | Reliability  |   | 
+Link  | How it works  | Executable or Script?  | Win  | Mac  | Linux  | Reliability  |   | 
 |---|---|---|---|---|---|---|---|
-| https://github.com/Xechorizo/McFishy  |   | AutoHotKey Script  | :white_check_mark  | :white_large_square  | :white_large_square  | I have not tested this | Could potentially work with Minecraft in the background?? |
-| https://pypi.org/project/mc-autofisher/ | | Python Script  | :white_check_mark  | :white_check_mark  | :white_check_mark  | I have not tested this |  |
+| [Xechorizo](https://github.com/Xechorizo/McFishy)  |   | AutoHotKey Script  | :white_check_mark:  | :white_large_square:  | :white_large_square:  | I have not tested this | Could potentially work with Minecraft in the background?? |
+| [mc-autofisher](https://pypi.org/project/mc-autofisher/) | | Python Script  | :white_check_mark:  | :white_check_mark:  | :white_check_mark:  | I have not tested this |  |
 
 ### For Future Testing
-Link  | How it works  | Is it an executable or a script? (See above for explanation)  | Win  | Mac  | Linux  | Reliability  |   | 
+Link  | How it works  | Executable or Script?  | Win  | Mac  | Linux  | Reliability  |   | 
 |---|---|---|---|---|---|---|---|
-| https://github.com/comjar/minecraft-autofish/blob/master/minecraft_autofish.py  |  | Python Script  | :white_check_mark  | :white_check_mark  | :white_check_mark  | I have not tested this  |  |
-| https://github.com/ruby3141/AFKFishing |  | AutoHotKey Script | :white_check_mark  | :white_large_square  | :white_large_square  | I have not tested this | Could potentially work with Minecraft in the background?? |
+| [comjar](https://github.com/comjar/minecraft-autofish/blob/master/minecraft_autofish.py)  |  | Python Script  | :white_check_mark:  | :white_check_mark:  | :white_check_mark:  | I have not tested this  |  |
+| [ruby3141](https://github.com/ruby3141/AFKFishing) |  | AutoHotKey Script | :white_check_mark:  | :white_large_square:  | :white_large_square:  | I have not tested this | Could potentially work with Minecraft in the background?? |
 
 ## How to run a python script for complete beginners
 ### Windows [Mac/Linux](#maclinux)
