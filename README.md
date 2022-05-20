@@ -15,8 +15,6 @@
 - Executable: A program that can be run just by double clicking on it, with all the necessary components included inside or in the same folder. For example: .exe, .jar, .app, and UNIX Executable Files. Runs just like an app.
 - Script: A file containing text lines of code. Requires installation of the programming language to your computer, so that the script can be interpreted. Requires knowledge of the terminal to install libraries, specify the language interpreter to be used, and the location of the file, and hence less user-friendly. 
 - [**See end of document for instructions on running a python script**](#how-to-run-a-python-script-for-complete-beginners)
-</br>
-</br>
 ## Table of autofishers for Minecraft 1.16+
 
 [Fishing bobber color detectors](#fishing-bobber-color-detectors)\
