@@ -9,7 +9,7 @@
 ## Summary
 - In 1.16+, minecraft fish farms do not work. New autofishers need to detect when the fishing bobber goes underwater, (right click) reel in, and (right click) cast out again. 
 - Caption template matching works the best, and I recommend elias123tre's script. Requires python knowledge. (I may fork and provide an updated executable download in the future)
-- If you want to run the autofisher without having to leave minecraft up on the screen, I recommend MrKinau's fishing bot. However, you won't be able to tell if anyone is nearby checking if you are autofishing. Jar file available to run without technical knowledge needed.
+- If you want to run the autofisher without having to leave minecraft up on the screen, I recommend MrKinau's fishing bot. However, you won't be able to tell if anyone is nearby - making you very vulnerable to bans. Jar file available to run without technical knowledge needed.
 
 ## Glossary
 - Executable: A program that can be run just by double clicking on it, with all the necessary components included inside or in the same folder. For example: .exe, .jar, .app, and UNIX Executable Files. Runs just like an app.
