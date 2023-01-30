@@ -1,4 +1,4 @@
-<h1>A collated list of programs (github repositories) for autofishing in Minecraft 1.16+</h1>
+<h1>A list of autofishing programs for Minecraft 1.16+</h1>
 <p align='center'>
   <em>Because every repo name is a permutation of "mine", "auto" and "fish" and my downloads folder is now a fish farm</em>
 </p>
